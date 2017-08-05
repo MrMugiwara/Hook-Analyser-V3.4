@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['ASN', 'Number of IPs', 'Number of malicious URLs', 'Owner', 'Malware / IP Ratio'],
+['40034',   645,              36751,      'CONFLUENCE-NETWORK-INC - Confluence Netw',  56 ],['29076',   471,              36619,      'CITYTELECOM-AS Citytelecom.ru',  77 ],['47583',   2155,              35602,      'HOSTING-MEDIA Aurimas Rapalis trading as',  16 ],['15169',   329,              34645,      'GOOGLE - Google Inc.',  105 ],['199599',   27,              21194,      'CIREX Telecom-Birzha LLC',  784 ],['33597',   29,              20085,      'INFORELAY - InfoRelay Online Systems In',  692 ],['33387',   986,              18528,      'DATASHACK - DataShack LC',  18 ],['3561',   210,              16501,      'SAVVIS - Savvis',  78 ],['35916',   396,              16054,      'MULTA-ASN1 - MULTACOM CORPORATION',  40 ],['32097',   831,              14808,      'WII-KC - WholeSale Internet Inc.',  17 ],['35042',   224,              14219,      'ISP4P ISP4P IT Services',  63 ],['61969',   53,              12785,      'TEAMINTERNET-AS Team Internet AGDE',  241 ],['196763',   12,              12384,      'KEY-SYSTEMS-AS Key-Systems GmbH',  1032 ],['53665',   13,              12220,      'BODIS-1 - Bodis LLC',  940 ],['32787',   27,              12178,      'PROLEXIC Prolexic Technologies Inc.',  451 ],['13446',   30,              11673,      'AS-NETZERO - NetzeroINC.',  389 ],['8075',   625,              10443,      'MICROSOFT-CORP---MSN-AS-BLOCK - Microsof',  16 ],['21740',   158,              10227,      'ENOMAS1 - eNom Incorporated',  64 ],['8001',   432,              10067,      'NET-ACCESS-CORP - Net Access Corporation',  23 ],['35470',   140,              9880,      'XL-AS XL Network',  70 ],['133618',   78,              9167,      'TRELLIAN-AS-AP Trellian Pty. LimitedAU',  117 ],['9123',   508,              8375,      'TIMEWEB-AS OOO TimeWeb',  16 ],
+    ]);
+    
+            var options = {
+              title: '',
+              hAxis: {title: 'Number of IPs'},
+              vAxis: {title: 'Number of malicious URLs'},
+              bubble: {textStyle: {fontSize: 11}}
+              
+            };
+    
+            var chart = new google.visualization.BubbleChart(document.getElementById('chart_div'));
+            
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+         <p> <B> <font color="#800040"><span style="font-family: '@Microsoft JhengHei'; font-weight: normal; font-style: normal; text-decoration: none;">Correlation between ASNs , Number of IPs and Number of Malicious URLs</B></p>
+        <div id="chart_div" style="width: 1000px; height: 600px;"></div>
+      </body>
+    </html>
+    

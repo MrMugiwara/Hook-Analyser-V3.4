@@ -1,0 +1,5 @@
+Many thanks to the following people for their help on this project - 
+
+1. Dinesh Arora (Unit testing) - dinesh.dinoo@gmail.com
+2. Sonakshi Arora (Integration testing) - er.sonakshi@gmail.com
+3. r45c4l (@r45c4l) for reporting defects

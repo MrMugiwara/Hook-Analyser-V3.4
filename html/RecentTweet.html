@@ -1,0 +1,36 @@
+
+    
+        <html>
+          <head>
+            <meta http-equiv="refresh" content="180">
+        	    <title> Recent Tweets Monitoring By Hook Analyser </title>
+    	    <BR><center><p><b><strong><font color="#800040"><span style="font-family: '@Microsoft JhengHei'; font-weight: normal; font-style: normal; text-decoration: none;">Recent Tweets by Channels</span></</strong></font></b></center>
+            <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+            <script type="text/javascript">
+              google.load("visualization", "1", {packages:["table"]});
+              google.setOnLoadCallback(drawTable);
+    
+              function drawTable() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Date');
+                data.addColumn('string', 'Channel Name');
+                data.addColumn('string', 'Tweet Sender');
+                data.addColumn('string', 'Message');
+                data.addRows([
+        		["2015-07-23 07:15:00","0day","@RonDeibert", "A very useful analysis and window into the 0day market based on the hackingteam files by @vlad902 http://tsyrklevich.net/2015/07/22/hacking-team-0day-market/…"],
+		["2015-07-30 13:31:00","malware","@ComputerApps_", "ICIT Fellow Covenant Security Solutions Speaks at British Embassy.  malware CISO DHS http://ow.ly/Qh53I"],
+		["2015-07-30 13:31:00","malware","@AnimalRightsJen", "Ukraine Derelict TrueCrypt Russia portal &39is command hub for Ukraine spying op&39: Malware used to attac. http://bit.ly/1H7DTcK World"],
+
+            ]);
+    
+                var table = new google.visualization.Table(document.getElementById('table_div'));
+    
+                table.draw(data, {showRowNumber: true});
+              }
+            </script>
+          </head>
+          <body>
+            <div id="table_div">style="width: 550px; height: 100px;"></div>
+          </body>
+        </html>
+        

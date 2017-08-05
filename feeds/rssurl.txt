@@ -1,0 +1,7 @@
+http://www.us-cert.gov/ncas/alerts.xml
+http://www.securityfocus.com/rss/vulnerabilities.xml
+http://www.cvedetails.com/vulnerability-feed.php?vendor_id=0&product_id=0&version_id=0&orderby=3&cvssscoremin=5
+http://www.exploit-db.com/rss.xml
+http://technet.microsoft.com/en-us/security/rss/advisory
+http://www.symantec.com/connect/item-feeds/blog/3251/feed/all/en/all
+http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml

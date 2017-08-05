@@ -1,0 +1,85 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Count'],
+          		['FR',  3],
+		['BG',  3],
+		['DK',  3],
+		['HR',  1],
+		['BN',  1],
+		['DE',  31],
+		['JP',  113],
+		['HU',  1],
+		['AT',  1],
+		['HK',  14],
+		['DZ',  1],
+		['BR',  59],
+		['VE',  1],
+		['PR',  2],
+		['RU',  25],
+		['LC',  2],
+		['PT',  10],
+		['RS',  1],
+		['TW',  106],
+		['TT',  4],
+		['TR',  5],
+		['NZ',  3],
+		['NG',  1],
+		['LV',  4],
+		['LT',  1],
+		['TH',  2],
+		['PK',  22],
+		['PH',  11],
+		['RO',  4],
+		['EG',  1],
+		['PL',  12],
+		['GT',  1],
+		['CO',  2],
+		['CN',  18],
+		['CL',  3],
+		['CA',  16],
+		['AM',  3],
+		['IT',  65],
+		['VN',  3],
+		['ZA',  7],
+		['GE',  2],
+		['AR',  17],
+		['AU',  5],
+		['IL',  15],
+		['IN',  92],
+		['IE',  14],
+		['ID',  4],
+		['ES',  10],
+		['UY',  3],
+		['UA',  21],
+		['MY',  6],
+		['US',  201],
+		['KR',  25],
+		['KZ',  7],
+		['SA',  2],
+		['SG',  8],
+		['MX',  1],
+
+    ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  <p> <B> <font color="#800040"><span style="font-family: '@Microsoft JhengHei'; font-weight: normal; font-style: normal; text-decoration: none;">Threat Vectors- % by Country</span></font> </B></p>
+    <div id="donutchart" style="width: 1150px; height: 600px;"></div>
+  </body>
+</html>

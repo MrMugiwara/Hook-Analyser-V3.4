@@ -1,0 +1,25 @@
+
+    
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["map"]});
+      google.setOnLoadCallback(drawMap);
+      function drawMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lat', 'Lon', 'URL'],
+          
+     ]);
+
+        var map = new google.visualization.Map(document.getElementById('map_div'));
+        map.draw(data, {showTip: true, useMapTypeControl: true});
+      }
+    </script>
+  </head>
+
+  <body>
+     <p> <B> <font color="#800040"><span style="font-family: '@Microsoft JhengHei'; font-weight: normal; font-style: normal; text-decoration: none;">Search Intelligence (Keyword based)</span></font> </B></p>
+    <div id="map_div" style="width: 1150px; height: 600px"></div>
+  </body>
+</html>
